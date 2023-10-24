@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+header {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background: hsl(200, 100%, 91%);
+  padding: 10px 10px 40px;
+  border-radius: 10px;
+  border: 1px solid hsl(0, 0%, 0%);
+}
+
+header img {
+  width: 100%;
+}
+
+header p {
+  float: right;
+}
+nav {
+  position: sticky;
+  top: 0;
+  color: hsl(0, 92%, 49%);
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+li a {
+  text-decoration: none;
+  color: hsl(28, 95%, 46%);
+}
+nav li {
+  text-align: center;
+  list-style: none;
+  margin: 10px;
+  color: hsl(28, 95%, 46%);
+  width: 100px;
+  padding: 8px;
+  background: hsl(0, 0%, 100%);
+  border: 3px solid hsla(49, 22%, 90%, 0.97);
+  border-radius: 10px;
+}
+
+nav li:hover {
+  box-shadow: 0 0 5px hsl(36, 94%, 41%);
+}
+
+.offer {
+  background: hsl(0, 0%, 7%);
+  width: 90%;
+  padding-bottom: 50px;
+  text-align: center;
+  border: 3px solid hsl(37, 77%, 40%);
+  border-radius: 20px;
+  margin: auto;
+}
+
+.offer h1 {
+  font-size: 200px;
+  color: hsl(36, 94%, 41%);
+  text-shadow: 0 0 2px hsl(0, 23%, 94%);
+  animation-direction: alternate;
+  animation: shadow 1s infinite linear;
+}
+
+@keyframes shadow {
+  from {
+    text-shadow: 0 0 2px hsl(0, 5%, 92%);
+  }
+
+  to {
+    text-shadow: 0 0 100px hsl(31, 95%, 45%);
+  }
+}
+
+.offer h2 {
+  color: hsl(33, 100%, 88%);
+}
+
+.cards {
+  display: flex;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cards article {
+  justify-content: center;
+  text-align: center;
+  width: 30%;
+  height: 500px;
+  margin: 5px;
+  padding: 10px;
+  border: 2px solid rgb(158, 188, 244);
+  border-radius: 10px;
+  background: rgb(209, 240, 255);
+}
+.cards p,
+.cards h1 {
+  padding: 10px;
+}
+
+.cards article:hover {
+  box-shadow: 0 0 10px rgb(121, 134, 239);
+}
+
+.cards img {
+  width: 98%;
+  height: 300px;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 0 3px hsl(0, 3%, 75%);
+}
+
+.cards button {
+  color: rgb(47, 22, 88);
+  border: 2px solid rgb(158, 188, 244);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.cards button:active {
+  background-color: rgb(218, 129, 13);
+  color: rgb(255, 255, 255);
+}
+
+.cards button:hover {
+  box-shadow: 0 0 10px rgb(143, 142, 141);
+}
+
+footer {
+  background: hsl(0, 0%, 0%);
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 10px;
+  gap: 5px;
+  border-radius: 10px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer img {
+  width: 30%;
+}
+
+footer p {
+  color: hsl(0, 0%, 100%);
+}
+
+@media screen and (max-width: 700px) {
+  nav {
+    position: relative;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .offer h1 {
+    font-size: 100px;
+  }
+
+  .cards {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .cards article {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer img {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
